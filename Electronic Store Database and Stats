@@ -1,0 +1,28 @@
+--Create a grocery store database
+
+CREATE table Store (id integer primary key, Name Text, Avaliability text, Price integer, rating integer);
+
+INSERT INTO Store VALUES (1,"Speaker", "In Stock", 100, 4.8 );
+INSERT INTO Store VALUES (2,"Wireless Earbuds", "In Stock", 50, 4.5 );
+INSERT INTO Store VALUES (3,"Portable Bluetooth Projector", "In Stock", 99, 3.8 );
+INSERT INTO Store VALUES (4,"Robot Vacuum Cleaner", "In Stock", 200, 3.2 );
+INSERT INTO Store VALUES (5,"Tablet", "In Stock", 300, 4.9 );
+INSERT INTO Store VALUES (6,"Fitness Watch", "In Stock", 100, 2.8 );
+INSERT INTO Store VALUES (7,"Smart Light Bulbs", "In Stock", 30, 1.8 );
+INSERT INTO Store VALUES (8,"Wireless Charging Mousepad", "In Stock", 40, 3.5 );
+INSERT INTO Store VALUES (9,"Air Purifier", "In Stock", 120, 4.3 );
+INSERT INTO Store VALUES (10,"Drone", "In Stock", 600, 4.2 );
+INSERT INTO Store VALUES (11,"Headset", "In Stock", 60, 4.1 );
+INSERT INTO Store VALUES (12,"Game Console", "In Stock", 500, 5.0 );
+INSERT INTO Store VALUES (13,"Printer", "In Stock", 250, 4.5 );
+INSERT INTO Store VALUES (14,"Pet Feeder", "In Stock", 80, 5.0 );
+INSERT INTO Store VALUES (15," Laser Pointer", "In Stock", 20, 4.5 );
+
+--display the database ordered by price. 
+
+SELECT * FROM Store
+ORDER BY Price desc;
+
+--what is the avg rating of all the electronic items?
+
+SELECT AVG(rating) FROM Store;
